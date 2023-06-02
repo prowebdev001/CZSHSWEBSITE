@@ -6,7 +6,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(2,8,25,0.4),rgba(2,8,25,0.4)),url(images/banner.png.png);
+    background-image: linear-gradient(rgba(2,9,30,0.5),rgba(2,9,30,0.5)),url(images/banner.png.png);
     background-position: center;
     background-size: cover;
 }
@@ -24,12 +24,12 @@ nav img{
 }
 .nav-links{
     flex: 1;
-    text-align: right;
+    text-align: center;
     margin-top: -100px;
-    background: #000000;
-    border-radius: 40px;
-    margin-left: 500px;
-    margin-right: 10px;
+    background: rgb(112,15,24);
+    
+    margin-left: 400px;
+    margin-right: 0;
 }    
 .nav-links ul li{
     list-style: none;
@@ -53,10 +53,9 @@ nav img{
     width: 100%;
 }
 .nav-links ul li:hover{
-    border-color: 1px solid gold;
-    background-color: gold;
+    border-color: 1px solid #7e272f;
+    background-color: #7e272f;
     transition: 0.5s; 
-    border-radius: 25px;
 }
 .text-box{
     width: 90%;
@@ -88,11 +87,26 @@ nav img{
     cursor: pointer;
 }
 .hero-btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    border-color: 1px solid #002945;
+    background-color: #002945;
     transition: 0.5s;  
 }
-
+.joemama-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding:  12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.joemama-btn:hover{
+    border-color: 1px solid  #002945;
+    background-color:  #002945;
+    transition: 0.5s; 
+}
 nav .fa{
     display: none;
 }
@@ -100,18 +114,18 @@ nav .fa{
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
-    } 
+}
     .nav-links ul li{
         display: block;
     }
     .nav-links{
-        position: fixed;
-        background: #f44336;
+        position: absolute;
+        background: #7e272f;
         height: 100vh;
-        width: 200px;
+        width: 300px;
         top: 0;
-        right: -200px;
-        text-align: left;
+        right: 0;
+        text-align: right;
         z-index: 2;
         transition: 1s;
     } 
@@ -143,17 +157,16 @@ nav .fa{
 .sub-menu-1
 {
     display: none;
-    border-color: 1px solid gold;
-    background-color: gold;
+    border: 1px solid rgb(112,15,24);
+    background: rgb(112,15,24);
     transition: 0.5s; 
-    border-radius: 25px;
 }
     
 .nav-links ul li:hover .sub-menu-1
 {
     display: block;
     position: absolute;
-    background: #000000;
+    background: rgb(112,15,24);
     margin-bottom: -15px;
     z-index: 2;
 }
@@ -167,21 +180,21 @@ nav .fa{
     width: 120px;
     padding: 10px;
     border-bottom: 1px dotted #fff;
-    border-radius: 25px;
     text-align: left;
 
 }
-
-.sub-menu-2
-{
+.sub-menu-2{
     display: none;
 }
-.nav-links ul li:hover .sub-menu-2 
+.sub-menu-1 ul li:hover .sub-menu-2
 {
-    position: absolute;
     display: block;
-    z-index: 2;
-    background: #000000;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: dimgray;
+    margin-left: -10px;
+    border-radius: 25px;
 }
 h1{
     font-size: 36px;
@@ -399,7 +412,7 @@ h3{
     text-align: center;
     padding: 30px 0;
     margin-top: 30px;
-    background-color: #2a2a2a;
+    background-color: lightslategray;
 }
 
 .footer h4{
@@ -557,8 +570,20 @@ h3{
     box-sizing: border-box;
 }
 
-
-
-
-
+/*------------- arrow ------------*/
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-left: 30px;
+}
 
