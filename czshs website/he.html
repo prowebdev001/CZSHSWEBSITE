@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CZSHS WEBSITE</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,900;1,300;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slideshow-image");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</head>
+<body class="body">
+<section class="sub-header">
+    <nav>
+         <a href="index.html"><img src="images/logo.png.png"></a>
+         <div class="nav-links" id="navlinks">
+             <ul>
+                 <li><a href="index.html"><hr>HOME<hr></a></li>
+                 <li><a href="#"><hr>ABOUT&nbsp;&nbsp;<i class="arrow down"></i><hr></a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="about.html.html">ABOUT</a></li>
+<li><a href="#">FACILITIES&nbsp;&nbsp;<i class="arrow right"></i></a>
+    
+    <div class="sub-menu-2">
+    <ul>
+        <li><a href="library.html">LIBRARY</a></li>
+        <li><a href="physics.html">PHYSICS LAB</a></li>
+        <li><a href="biology.html">BIOLOGY LAB</a></li>
+        <li><a href="computer.html">COMPUTER LAB</a></li>
+        <li><a href="he.html">H.E ROOM</a></li>
+        <li><a href="hotel.html">MINI HOTEL</a></li>
+    </ul>
+    </div> 
+<li><a href="hymn.html">CZSHS HYMN</a></li>
+</ul>
+</div>
+                     
+                <li><a href="#"><hr>ACADEMIC&nbsp;&nbsp;<i class="arrow down"></i><hr></a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="stem.html">STEM</a></li>
+<li><a href="humss.html">HUMSS</a></li>
+<li><a href="gas.html">GAS</a></li>
+</ul>
+</div>
+<li><a href="#"><hr>TVL&nbsp;&nbsp;<i class="arrow down"></i><hr></a>
+<div class="sub-menu-1">    
+<ul>
+<li><a href="ict.html">ICT</a></li>   
+<li><a href="H.E.html">H.E</a></li>
+</ul>
+</div>
+<li><a href="aad.html.html"><hr>ARTS AND DESIGN<hr></a></li>
+<li><a href="contact.html.html"><hr>CONTACT<hr></a></li>
+</ul>
+</div>
+</nav> 
+    
+    <h1>H.E. ROOM<hr></h1>
+</section>
+
+<!--------- about us content -------->  
+    
+<section class="about-us">  
+    
+    <div class="row">
+        <div class="about-col">
+            <h1>H.E. ROOM</h1>
+             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ladies and gentlemen, allow me to take you on a virtual journey to the heart of Cielito Zamora Senior High School, where learning transcends traditional classroom walls and takes on a whole new dimension. Welcome to the H.E. (Home Economics) Room, a place where creativity, practical skills, and innovation converge.Nestled within the bustling corridors of Cielito Zamora, the H.E. Room stands as a beacon of experiential education, offering students a hands-on approach to various aspects of home economics. <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equipped with state-of-the-art kitchen appliances and a vast array of culinary tools, this space is a playground for creativity and culinary mastery.So, whether you find joy in culinary arts, have a flair for fashion, or seek to build a solid foundation in practical life skills, the H.E. Room at Cielito Zamora Senior High School offers an unparalleled opportunity to explore, learn, and grow. Step inside and unlock your potential as you embark on a transformative journey that transcends textbooks and unleashes your imagination. Welcome to a world of endless possibilities!</p>
+        </div>
+        <div class="about-col">
+            <div class="slideshow-container">
+    <img class="slideshow-image" src="images/cook1.jpg" alt="Image 1">
+    <img class="slideshow-image" src="images/cook2.jpg" alt="Image 2">
+    <img class="slideshow-image" src="images/cook3.jpg" alt="Image 3">
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+        </div>
+    </div>
+    
+</section> 
+      
+<!----- Footer --------> 
+    
+<section class="footer">
+     <h3>About Us</h3>
+     <p>We are located at<br>Molave St.,Cristina Homes,Caloocan City,1400 Metro Manila,Philippines</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/cielitozamoraseniorhigh2016" class="fa fa-facebook" target="_blank"></a> 
+        <a href="contact.html.html" class="fa fa-phone" target="_blank"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrjFGpqXFbHvdsQJptLctdkbgBWrxghSzxPLGhGmGrHhtKVPPWKWvqbrQKbWSPdHPnLHgq"class="fa fa-envelope-o" target="_blank"></a>
+    </div>
+    <p>Made with&#128151;by ICT Bitcoin</p>
+</section> 
+    
+</body>
+</html>    
+    
+
+    
